@@ -1,0 +1,114 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(27, 29, 31);
+    height: 100%;
+    width: 100%;
+    margin: 0;
+
+}
+
+.container {
+    /*max-width: 1158px;*/
+    max-width: 1360px;
+    padding: 0 15px;
+    margin: 0 auto;
+}  
+
+
+/*Hero*/
+.hero{
+    background: url("../img/background.jpg");
+    background-size: cover;
+  background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+
+}
+
+.hero-title{
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 48px;
+    margin-bottom: 36px;
+    margin-top: 0;
+}
+
+.hero-text{
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+}
+
+.hero-city-container{
+    padding: 60px;
+    border-radius: 40px;
+    background:  rgb(255, 255, 255);
+    width: 573px;
+    height: 444px;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    display: flex;
+    align-items: center;
+    /*width: 1170px;*/
+    height: 100%;
+    margin:auto;
+    padding-top: 162px;
+    padding-left: 52px;
+    padding-bottom: 162px;
+    /*padding-right: 692px;*/
+
+    position: relative;
+}
+
+.hero-logo{
+position: absolute;
+/*left: 95px;*/
+top: 32px;
+}
+
+/*Galary*/
+
+.city-galary{
+    padding-top: 100px;
+    
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.galary-title{
+    
+    color: rgb(27, 29, 31);
+font-size: 44px;
+font-weight: 600;
+line-height: 48px;
+
+margin-bottom: 80px;
+margin-left: auto;
+}
+
+.galary-list{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    
+}
+
+.galary-button {
+    cursor: pointer;
+    border-radius: 48px;
+    border: none;
+    background: none;
+    border-radius: 48px;
+    padding: 0;
+}
+
+.galary-item{
+    flex-basis: calc((100% - (24px*3))/4);
+}
+
+.galary-image{
+   border-radius: 48px;
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>city</title>
+    <!--Fonts-->
+    <link href="https: //fonts.googleapis.com/css2? family= Montserrat:wght@400;600 & display=swap" rel="stylesheet">
+
+    <!--Normalize-->
+   <link rel="" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+   <!--CSS-->
+   <link rel="stylesheet" href="./css/modal.css">
+   <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+        " rel="stylesheet">
+   <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!--Hero-->
+    <div class="hero">
+        <div class="container wrapper">
+            <img class="hero-logo" src="./img/logo.png" alt="logo GOIT">
+            <div class="hero-city-container">
+                <h1 class="hero-title">Суми</h1>
+                <p class="hero-text">
+                 Засноване 1652 року, налічує близько 268 тисяч українців та своїм промисловим і культурним розвитком багато в чому завдячує діяльності торгового будинку «Харитоненко з сином». Саме вони створили в місті цукрові заводи і зробили з нього «Цукрову столицю». Спасо-Преображенський кафедральний собор – єдиний у світі православний собор, на даху якого знаходяться об’ємні фігури. Місто Путивль в області – одне з найдревніших міст Київської Русі, події в ньому описані у «Слові о полку Ігоревім».
+                </p>
+            </div>
+        </div>
+       
+    </div>
+    
+    <div class="city-galary">
+        <h2 class="galary-title">Суми = маленьке місто великих вражень</h2>
+       
+        </div>
+
+        <div class="container">
+        <ul class="galary-list">
+            <li class="galary-item">
+                <button data-micromodal-trigger="modal" data-index="0" class="galary-button" type="button">
+                    <img class="galary-image" src="./img/1.jpg" alt="fontan" width="275" height="160">
+                </button>
+            </li>
+            <li class="galary-item">
+                <button data-micromodal-trigger="modal" data-index="1" class="galary-button" type="button">
+                    <img class="galary-image" src="./img/2.jpg" alt="building" width="275" height="160">
+                </button>
+            </li>
+            <li class="galary-item">
+                <button data-micromodal-trigger="modal" data-index="2" class="galary-button" type="button">
+                    <img class="galary-image" src="./img/3.jpg" alt="monument" width="275" height="160">
+                </button>
+            </li>
+            <li class="galary-item">
+                <button data-micromodal-trigger="modal" data-index="3" class="galary-button" type="button">
+                    <img class="galary-image" src="./img/4.jpg" alt="chirch" width="275" height="160">
+                </button>
+            </li>
+            <li class="galary-item">
+                <button data-micromodal-trigger="modal" data-index="4" class="galary-button" type="button">
+                    <img class="galary-image" src="./img/5.jpg" alt="monument" width="275" height="160">
+                </button>
+            </li>
+            <li class="galary-item">
+                <button data-micromodal-trigger="modal" data-index="5" class="galary-button" type="button">
+                    <img class="galary-image" src="./img/6.jpg" alt="chirch" width="275" height="160">
+                </button>
+            </li>
+            <li class="galary-item">
+                <button data-micromodal-trigger="modal" data-index="6" class="galary-button" type="button">
+                    <img class="galary-image" src="./img/7.jpg" alt="altanka" width="275" height="160">
+                </button>
+            </li>
+            <li class="galary-item">
+                <button data-micromodal-trigger="modal" data-index="7" class="galary-button" type="button">
+                    <img class="galary-image" src="./img/8.jpg" alt="people" width="275" height="160">
+                </button>
+            </li>
+        </ul>
+    </div>
+
+    <div class="modal micromodal-slide" id="modal" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+                <header class="modal__header">
+                    <h2 class="modal__title" id="modal-title">
+                        Cвітлини міста Суми
+                    </h2>
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+                </header>
+                <main class="modal__content" id="modal-content">
+                    <div class="splide" role="group" aria-label="city-gallery">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <img src="img/1.jpg" alt="">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="img/2.jpg" alt="">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="img/3.jpg" alt="">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="img/4.jpg" alt="">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="img/5.jpg" alt="">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="img/6.jpg" alt="">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="img/7.jpg" alt="">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="img/8.jpg" alt="">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+
+    <script src="
+        https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+        "></script>
+
+        <script src="gallery.js"></script>
+</body>
+</html>
